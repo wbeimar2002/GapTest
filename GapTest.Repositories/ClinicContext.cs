@@ -1,8 +1,5 @@
 ﻿namespace GapTest.Repositories
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using Models.Entities;
     using Microsoft.EntityFrameworkCore;
 
