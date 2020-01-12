@@ -11,6 +11,8 @@
         // dotnet ef database update
 
         private const string _connectionString = "Data Source=GAPClinic.db";
+        //private string _connectionString = "Data Source=" + AppContext.BaseDirectory + "GAPClinic.db";
+
 
         public DbSet<Patient> Patient { get; set; }
         public DbSet<Appointment> Appointment { get; set; }

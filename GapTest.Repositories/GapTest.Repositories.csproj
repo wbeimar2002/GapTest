@@ -22,4 +22,10 @@
     <ProjectReference Include="..\GapTest.Models\GapTest.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="GAPClinic.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
