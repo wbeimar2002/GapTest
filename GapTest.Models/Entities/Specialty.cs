@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Text;
 
-    public class Speciality: EntityBase
+    public class Specialty: EntityBase
     {
         public string Name { get; set; }
     }
