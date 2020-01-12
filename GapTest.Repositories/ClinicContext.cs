@@ -5,6 +5,11 @@
 
     public class ClinicContext : DbContext
     {
+
+        // cd GapTest.Repositories
+        // dotnet ef migrations add InitialCreate
+        // dotnet ef database update
+
         private const string _connectionString = "Data Source=GAPClinic.db";
 
         public DbSet<Patient> Patient { get; set; }
