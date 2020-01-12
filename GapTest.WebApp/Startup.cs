@@ -37,6 +37,8 @@ namespace GapTest.WebApp
             services.AddControllersWithViews();
             services.AddTransient<IClinicRepository<Patient>, ClinicRepository<Patient>>();
             services.AddTransient<IPatientService, PatientService>();
+            services.AddTransient<ISpecialtyService, SpecialtyService>();
+            services.AddTransient<IClinicRepository<Specialty>, ClinicRepository<Specialty>>();
 
             services.AddSwaggerGen(c =>
             {

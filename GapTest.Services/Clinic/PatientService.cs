@@ -16,16 +16,28 @@
 
         public IEnumerable<Patient> GetAll()
         {
-            var result = _patientRepository.List();
-
-            return result;
+            try
+            {
+                var result = _patientRepository.List();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public Patient GetById(int patientId)
         {
-            var result = _patientRepository.GetById(patientId);
-
-            return result;
+            try
+            {
+                var result = _patientRepository.GetById(patientId);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public bool Create(Patient patient)
@@ -33,7 +45,6 @@
             try
             {
                 var result = _patientRepository.Add(patient);
-
                 return result;
             }
             catch (Exception ex)
@@ -47,9 +58,7 @@
             try
             {
                 var patient = _patientRepository.GetById(patientId);
-
                 var result = _patientRepository.Delete(patient);
-
                 return result;
             }
             catch (Exception ex)
