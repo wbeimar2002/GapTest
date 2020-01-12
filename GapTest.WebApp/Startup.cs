@@ -35,11 +35,12 @@ namespace GapTest.WebApp
             var oelo = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin"));
 
             services.AddControllersWithViews();
-            services.AddTransient<IClinicRepository<Patient>, ClinicRepository<Patient>>();
             services.AddTransient<IPatientService, PatientService>();
             services.AddTransient<ISpecialtyService, SpecialtyService>();
+            services.AddTransient<IAppointmentService, AppointmentService>();
             services.AddTransient<IClinicRepository<Specialty>, ClinicRepository<Specialty>>();
-
+            services.AddTransient<IClinicRepository<Appointment>, ClinicRepository<Appointment>>();
+            services.AddTransient<IClinicRepository<Patient>, ClinicRepository<Patient>>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });

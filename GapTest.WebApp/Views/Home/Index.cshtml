@@ -1,16 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@section scripts{ 
+@section scripts{
 
-<script src="~/js/site.js">
-    
-</script>
+    <script src="~/js/site.js">
+
+    </script>
 
 }
 
 
+
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h4 class="display-5">Welcome to Alexander Gonzalez's GAP Technical test</h4>
+</div>
+<br />
+
+<div class="col-md-4">
+    <h5>GAP Clinic</h5>
+    <ul>
+        <li><a asp-area="" asp-controller="Home" asp-action="Patients">patients</a></li>
+        <li><a asp-area="" asp-controller="Home" asp-action="Appointments">appointments</a></li>
+    </ul>
+</div>
+<br />
+<div class="col-md-4">
+    <h5>Swagger </h5>
+    <ul>
+        <li>for test Directly the Web API: <a href="swagger">Swagger</a></li>
+    </ul>
+</div>
+<br />
+<div class="text-left">
+    <h5>Personal information:</h5>
+    <address>
+        <strong>Email:</strong> <a href="mailto:walex0402@gmail.com">walex0402@gmail.com</a><br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alexander-gonzalez-b8340344/">https://www.linkedin.com/in/alexander-gonzalez-b8340344/</a><br />
+        <strong>Cel:</strong> <label>3007787369</label>
+
+    </address>
 </div>
