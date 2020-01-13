@@ -4,6 +4,7 @@ namespace GapTest.WebApp
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using GapTest.Models;
     using GapTest.Models.Entities;
     using GapTest.Repositories;
     using GapTest.Repositories.Repositories;
@@ -15,6 +16,7 @@ namespace GapTest.WebApp
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using Microsoft.Extensions.Logging;
     using Microsoft.OpenApi.Models;
 
     public class Startup
@@ -71,7 +73,7 @@ namespace GapTest.WebApp
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {
@@ -80,6 +82,7 @@ namespace GapTest.WebApp
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            
         }
     }
 }

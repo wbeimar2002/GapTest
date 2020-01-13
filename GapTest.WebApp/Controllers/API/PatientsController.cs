@@ -4,6 +4,7 @@
     using Services.Clinic;
     using Microsoft.AspNetCore.Mvc;
     using GapTest.Models.Entities;
+    using Microsoft.AspNetCore.Authorization;
 
     [Route("api/[controller]")]
     [ApiController]
