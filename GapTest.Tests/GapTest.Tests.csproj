@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Clinic\" />
-    <Folder Include="DataMocks\" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GapTest.Services\GapTest.Services.csproj" />
   </ItemGroup>
 
 </Project>
