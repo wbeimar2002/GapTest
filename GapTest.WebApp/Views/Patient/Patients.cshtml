@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "Patients";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts{
+    <script src="~/js/patients.js"></script>
+}
+<div class="row">
+    <h5>View Patients</h5>
+    <div class="table-responsive">
+        <table id="patientTable" class="table table-condensed table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Identification Number</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <h5>Create Patients</h5>
+    <br />
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="patientName">Name</label>
+                    <input type="text" id="patientName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="identificationNumber">Identification Number</label>
+                    <input type="text" id="identificationNumber" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="phoneNumber" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" />
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <button type="button" id="addButton" class="btn btn-default" onclick="addClick();">Add</button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button type="button" id="clearButton" class="btn btn-default" onclick="clearClick();">Clear Form</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

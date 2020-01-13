@@ -87,7 +87,7 @@ namespace GapTest.Services.Clinic
         private bool ValidateCancel(Appointment appointment)
         {
             //Business rule, the Appointment only be canceled when don't pass 24 hours
-            bool canBeCanceled = (appointment.Date - DateTime.Now).TotalHours > 24 ? true : false;
+            bool canBeCanceled = (appointment.Date - DateTime.Now).TotalHours > 24;
 
             return canBeCanceled;
         }
